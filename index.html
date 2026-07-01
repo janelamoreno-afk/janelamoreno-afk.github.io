@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuentos de Nuestra Comunidad</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#6b9637;
+}
+
+/* ENCABEZADO */
+
+header{
+    background:linear-gradient(to right,#0b4d1c,#0a3815);
+    padding:15px;
+}
+
+.encabezado{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    height:100px;
+}
+
+.titulo-principal{
+    color:#ff1e1e;
+    font-size:55px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-shadow:3px 3px 6px rgba(0,0,0,0.4);
+}
+
+.subtitulo{
+    color:#ffffff;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* MENÚ */
+
+nav{
+    background:#ffffff;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#004b8d;
+    font-weight:bold;
+    margin:0 20px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#d60000;
+}
+
+/* BIENVENIDA */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.bienvenido{
+    font-size:70px;
+    color:#ffe600;
+    font-weight:bold;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.4);
+}
+
+.texto{
+    max-width:900px;
+    margin:30px auto;
+    color:#111;
+    font-size:28px;
+    font-weight:bold;
+    line-height:1.6;
+}
+
+/* BOTONES */
+
+.botones{
+    margin-top:40px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:18px 35px;
+    margin:10px;
+    border-radius:40px;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-rojo{
+    background:#d60000;
+    color:white;
+}
+
+.btn-verde{
+    background:#0b4d1c;
+    color:white;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* TARJETAS */
+
+.tarjetas{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:60px;
+}
+
+.tarjeta{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+.tarjeta h3{
+    color:#d60000;
+    margin-bottom:15px;
+}
+
+.tarjeta p{
+    color:#333;
+    font-size:17px;
+    line-height:1.5;
+}
+
+/* PIE */
+
+footer{
+    margin-top:60px;
+    background:#0a3815;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="encabezado">
+
+<img src="Imagenes/Universidad-Nacional-de-Loja-UNL-300x300.png" alt="Logo UNL" class="logo">
+
+<div>
+<h1 class="titulo-principal">CUENTOS DE NUESTRA COMUNIDAD</h1>
+
+<p class="subtitulo">
+Carrera de Pedagogía de las Ciencias Experimentales Informática
+</p>
+</div>
+
+</div>
+
+</header>
+
+<nav>
+
+<a href="index.html">Inicio</a>
+<a href="comunidad.html">Nuestra Comunidad</a>
+<a href="biblioteca.html">Biblioteca</a>
+<a href="juegos.html">Juegos</a>
+
+</nav>
+
+<section class="hero">
+
+<h2 class="bienvenido">¡BIENVENIDO!</h2>
+
+<p class="texto">
+Guíate a través de nuestro espacio digital para descubrir cuentos,
+leyendas y tradiciones de nuestra comunidad. Aquí podrás aprender,
+explorar y divertirte mediante recursos educativos diseñados para niños.
+</p>
+
+<div class="botones">
+
+<a href="comunidad.html" class="btn btn-rojo">
+🏘️ Nuestra Comunidad
+</a>
+
+<a href="biblioteca.html" class="btn btn-verde">
+📖 Ir a la Biblioteca
+</a>
+<a href="juegos.html" class="btn btn-rojo">
+🎮 Juegos
+</a>
+
+</div>
+
+<div class="tarjetas">
+
+<div class="tarjeta">
+<h3>📖 Leyendas</h3>
+<p>
+Conoce historias tradicionales llenas de cultura, valores y sabiduría ancestral.
+</p>
+</div>
+
+<div class="tarjeta">
+<h3>📚 Biblioteca</h3>
+<p>
+Accede a cuentos digitales y recursos educativos para fortalecer el aprendizaje.
+</p>
+</div>
+
+<div class="tarjeta">
+<h3>🎮 Juegos</h3>
+<p>
+Aprende jugando con actividades interactivas y divertidas para niños.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Universidad Nacional de Loja - Proyecto de Vinculación
+</footer>
+
+</body>
+</html>

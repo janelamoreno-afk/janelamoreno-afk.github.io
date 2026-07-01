@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca de Cuentos</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f5dc;
+}
+
+/* ENCABEZADO */
+
+header{
+    background:linear-gradient(to right,#006400,#228B22);
+    padding:30px;
+    text-align:center;
+}
+
+header h1{
+    color:#ffffff;
+    font-size:60px;
+    text-shadow:3px 3px 5px black;
+}
+
+/* MENÚ */
+
+nav{
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-bottom:4px solid black;
+}
+
+nav a{
+    text-decoration:none;
+    color:#004a99;
+    font-size:28px;
+    font-weight:bold;
+    margin:0 30px;
+}
+
+nav a:hover{
+    color:#ff6600;
+}
+
+/* TÍTULO */
+
+.titulo{
+    text-align:center;
+    margin-top:30px;
+}
+
+.titulo h2{
+    color:black;
+    font-size:45px;
+}
+
+.titulo p{
+    color:black;
+    font-size:22px;
+    margin-top:10px;
+}
+
+/* BUSCADOR */
+
+.buscador{
+    text-align:center;
+    margin:40px;
+}
+
+.buscador input{
+    width:450px;
+    padding:15px;
+    border-radius:30px;
+    border:3px solid #ff9800;
+    font-size:20px;
+}
+
+/* TARJETAS */
+
+.contenedor{
+    width:90%;
+    margin:auto;
+}
+
+.tarjeta{
+    background:white;
+    border:6px solid #ffb703;
+    border-radius:25px;
+    overflow:hidden;
+    display:flex;
+    margin-bottom:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.tarjeta img{
+    width:350px;
+    height:250px;
+    object-fit:cover;
+}
+
+.info{
+    padding:25px;
+}
+
+.info h3{
+    color:black;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.info p{
+    color:black;
+    font-size:22px;
+    text-align:justify;
+    line-height:1.6;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    background:#ff6600;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.boton:hover{
+    background:#cc5200;
+}
+
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>📚 BIBLIOTECA DE CUENTOS Y LEYENDAS ANCESTRALES</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="comunidad.html">Nuestra Comunidad</a>
+    <a href="biblioteca.html">Biblioteca</a>
+    <a href="juegos.html">Juegos</a>
+</nav>
+
+<section class="titulo">
+    <h2>🌈 Descubre Nuestros Cuentos</h2>
+    <p>Aprende y diviértete con las leyendas ancestrales de la Sierra ecuatoriana.</p>
+</section>
+
+<div class="buscador">
+    <input type="text" id="buscar" placeholder="🔍 Buscar cuento o leyenda..." onkeyup="filtrarCuentos()">
+</div>
+
+<div class="contenedor">
+
+```
+<div class="tarjeta" id="iwiti">
+    <img src="Imagenes/Screenshot 2026-06-20 013104.png" alt="Iwiti">
+    <div class="info">
+        <h3>El Mono y la Guayusa</h3>
+        <p>
+            Un cuento ancestral que transmite valores, tradiciones y enseñanzas
+            de los pueblos originarios de la Sierra ecuatoriana.
+        </p>
+        <a href="mono-guayusa.html" class="boton">📖 Ver cuento</a>
+    </div>
+</div>
+
+<div class="tarjeta" id="La niña del cacao">
+    <img src="Imagenes/Screenshot 2026-06-21 011400.png" alt="Caja Ronca">
+    <div class="info">
+        <h3>La niña del cacao</h3>
+        <p>
+            Una leyenda tradicional que forma parte de la memoria cultural
+            de los pueblos andinos y sus creencias ancestrales.
+        </p>
+        <a href="nina-cacao.html" class="boton">📖 Ver cuento</a>
+    </div>
+</div>
+
+<div class="tarjeta" id="la casa1028">
+    <img src="Imagenes/Screenshot 2026-06-21 021801.png" alt="Cantuña">
+    <div class="info">
+        <h3>La casa1028</h3>
+        <p>
+            Una de las leyendas más conocidas del Ecuador, llena de misterio,
+            historia y tradición cultural.
+        </p>
+        <a href="la-casa.html" class="boton">📖 Ver cuento</a>
+    </div>
+</div>
+
+<div class="tarjeta" id="chiriguana">
+    <img src="Imagenes/Screenshot 2026-06-21 031712.png" alt="Cóndor">
+    <div class="info">
+        <h3>La cueva de la chiriguana</h3>
+        <p>
+            Una historia andina que resalta el respeto por la naturaleza y
+            la convivencia con los animales de la región.
+        </p>
+        <a href="chiriguana.html" class="boton">📖 Ver cuento</a>
+    </div>
+</div>
+```
+
+</div>
+
+<footer>
+    © 2026 - Cuentos de Nuestra Comunidad
+</footer>
+
+<script>
+function filtrarCuentos() {
+
+    let texto = document.getElementById("buscar").value.toLowerCase();
+
+    let tarjetas = document.getElementsByClassName("tarjeta");
+
+    for(let i = 0; i < tarjetas.length; i++) {
+
+        let contenido = tarjetas[i].innerText.toLowerCase();
+
+        if(contenido.includes(texto)) {
+            tarjetas[i].style.display = "flex";
+        } else {
+            tarjetas[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

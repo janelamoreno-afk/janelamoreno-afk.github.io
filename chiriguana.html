@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Cueva de la Chiriguana</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#e8f5e9,#fff3e0);
+}
+
+header{
+    background:linear-gradient(to right,#1b5e20,#43a047);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:50px;
+}
+
+.subtitulo{
+    font-size:22px;
+    margin-top:10px;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+.tarjeta{
+    margin-top:30px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    text-align:center;
+    background:white;
+    border:5px solid #43a047;
+}
+
+.tarjeta h2{
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.boton{
+    display:inline-block;
+    background:#1b5e20;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.boton:hover{
+    background:#0d3d12;
+}
+
+video, audio{
+    width:100%;
+    margin-top:10px;
+    border-radius:15px;
+}
+
+/* 🔙 BOTÓN REGRESAR */
+.volver{
+    display:block;
+    width:fit-content;
+    margin:40px auto;
+    background:#d32f2f;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:0 5px 10px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.volver:hover{
+    background:#9a0007;
+    transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🏔️ LA CUEVA DE LA CHIRIGUANA</h1>
+    <p class="subtitulo">
+        Leyenda ancestral en formato libro digital, video y audio.
+    </p>
+</header>
+
+<div class="contenedor">
+
+    <!-- 📖 LIBRO DIGITAL -->
+    <div class="tarjeta">
+        <h2>📖 Libro Digital</h2>
+
+        <a href="https://heyzine.com/flip-book/70842aec34.html#page/2" target="_blank" class="boton">
+            Abrir Libro Interactivo
+        </a>
+    </div>
+
+    <!-- 🎥 VIDEO -->
+    <div class="tarjeta">
+        <h2>🎥 Video de la Leyenda</h2>
+
+        <video controls>
+            <source src="Videos/LA_CUEVA_DE_LA_CHIRIGUANA-MARIA_ELIZABETH_POGO_CONDOY.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- 🎧 AUDIO -->
+    <div class="tarjeta">
+        <h2>🎧 Audio de la Leyenda</h2>
+
+        <audio controls>
+            <source src="Audio/WhatsApp Audio 2026-06-20 at 5.40.00 PM.mpeg" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- 🔙 BOTÓN REGRESAR -->
+    <a href="biblioteca.html" class="volver">
+        🔙 Regresar a Biblioteca
+    </a>
+
+</div>
+
+</body>
+</html>

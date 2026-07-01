@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Casa 1028</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#f0f8ff,#ffe4e1);
+}
+
+header{
+    background:linear-gradient(to right,#4b0082,#8a2be2);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:50px;
+}
+
+.subtitulo{
+    font-size:22px;
+    margin-top:10px;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+.portada{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:auto;
+    border-radius:20px;
+    border:6px solid #4b0082;
+    transition:0.3s;
+}
+
+.portada:hover{
+    transform:scale(1.03);
+}
+
+.tarjeta{
+    margin-top:30px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    text-align:center;
+}
+
+.tarjeta:nth-of-type(1){
+    background:#f3e5f5;
+    border:6px solid #ba68c8;
+}
+
+.tarjeta:nth-of-type(2){
+    background:#e3f2fd;
+    border:6px solid #64b5f6;
+}
+
+.tarjeta:nth-of-type(3){
+    background:#e8f5e9;
+    border:6px solid #81c784;
+}
+
+.tarjeta h2{
+    color:black;
+    margin-bottom:20px;
+}
+
+.boton{
+    display:inline-block;
+    background:#6a1b9a;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.boton:hover{
+    background:#4a148c;
+}
+
+video{
+    width:100%;
+    max-width:800px;
+    border-radius:15px;
+}
+
+audio{
+    width:100%;
+    max-width:500px;
+}
+
+.regresar{
+    text-align:center;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🏠 la casa1028</h1>
+    <p class="subtitulo">
+        Una leyenda misteriosa llena de suspenso y aprendizaje.
+    </p>
+</header>
+
+<div class="contenedor">
+
+    <!-- PORTADA -->
+    <img src="Imagenes/Screenshot 2026-06-21 021801.png" alt="La Casa 1028" class="portada">
+
+    <!-- PDF -->
+    <div class="tarjeta">
+        <h2>📖 Leer Leyenda</h2>
+
+        <a href="pdf/Copia de Presentación de Historia de los libros  vintage medieval madera beige rojo y dorado   (Flyer A4).pdf" target="_blank" class="boton">
+            📚 Abrir PDF de la Leyenda
+        </a>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="tarjeta">
+        <h2>🎥 Video Cuento</h2>
+
+        <video controls>
+            <source src="Videos/DANIELA_NATALY_CARRION_CARRION_VIDEO_CUENTO (1).mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- AUDIO -->
+    <div class="tarjeta">
+        <h2>🎵 Audio Cuento</h2>
+
+        <audio controls>
+            <source src="Audio/WhatsApp Audio 2026-06-20 at 8.13.28 PM (1).mp4" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- BOTÓN REGRESAR -->
+    <div class="regresar">
+        <a href="biblioteca.html" class="boton">
+            ⬅ Regresar a Biblioteca
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

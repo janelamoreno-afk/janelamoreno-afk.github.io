@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leyenda El Mono y la Guayusa</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f5dc;
+}
+
+header{
+    background:linear-gradient(to right,#006400,#228B22);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:50px;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+.portada{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:auto;
+    border-radius:20px;
+    border:6px solid #ffb703;
+}
+
+/* TARJETAS DE COLORES */
+
+.tarjeta{
+    margin-top:30px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    text-align:center;
+}
+
+/* PDF */
+
+.tarjeta:nth-of-type(1){
+    background:#fff8dc;
+    border:6px solid #ffb703;
+}
+
+/* VIDEO */
+
+.tarjeta:nth-of-type(2){
+    background:#e3f2fd;
+    border:6px solid #4cc9f0;
+}
+
+/* AUDIO */
+
+.tarjeta:nth-of-type(3){
+    background:#e8f5e9;
+    border:6px solid #90be6d;
+}
+
+.tarjeta h2{
+    color:black;
+    margin-bottom:20px;
+}
+
+.boton{
+    display:inline-block;
+    background:#ff6600;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.boton:hover{
+    background:#cc5200;
+}
+
+video{
+    width:100%;
+    max-width:800px;
+    border-radius:15px;
+}
+
+audio{
+    width:100%;
+    max-width:500px;
+}
+
+.regresar{
+    text-align:center;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🐒🌿 LEYENDA EL MONO Y LA GUAYUSA</h1>
+</header>
+
+<div class="contenedor">
+
+```
+<img src="Imagenes/Screenshot 2026-06-20 013104.png" alt="Leyenda El Mono y la Guayusa" class="portada">
+
+<div class="tarjeta">
+    <h2>📖 Leer Leyenda</h2>
+
+    <a href="pdf/LEYENDA EL MONO Y GUAYUSA.pdf" target="_blank" class="boton">
+        Abrir PDF
+    </a>
+</div>
+
+<div class="tarjeta">
+    <h2>🎥 Video Leyenda</h2>
+
+    <video controls>
+        <source src="Videos/LEYENDA EL MONO Y LA GUAYUSA.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="tarjeta">
+    <h2>🎵 Audio Leyenda</h2>
+
+    <audio controls>
+        <source src="Audio/LEYENDA EL MONO Y LA GUAYUSA.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div class="regresar">
+    <a href="biblioteca.html" class="boton">
+        ⬅ Regresar a Biblioteca
+    </a>
+</div>
+```
+
+</div>
+
+</body>
+</html>
